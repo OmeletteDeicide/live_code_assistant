@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Générer un extrait de code</h2>
+<form method="post" action="{% url 'generate_snippet' %}">
+    {% csrf_token %}
+    <textarea name="description" placeholder="Description"></textarea>
+    <select name="language">
+        <option value="Python">Python</option>
+        <option value="Java">Java</option>
+        <option value="Dart">Dart</option>
+    </select>
+    <button type="submit">Générer</button>
+</form>
+{% endblock %}
