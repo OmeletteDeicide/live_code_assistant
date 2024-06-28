@@ -34,7 +34,7 @@ DATABASES = {
 
 ## Utilisation
 
-Après avoir installé les dépendances, vous pouvez lancer le serveur de développement en exécutant :
+Après avoir installé les dépendances, vous pouvez lancer le serveur de développement en vous postant dans /code_assistant et en exécutant :
 
 ```bash
 python manage.py runserver
