@@ -12,6 +12,26 @@ Pour installer les dépendances de ce projet, veuillez exécuter la commande sui
 pip install -r requirements.txt
 ```
 
+ajouter un fichier .env ici : code_assistant\\.env
+son contenu doit être : 
+```
+OPENAI_API_KEY='Votre clé API'
+```
+
+Changer settings.py :
+```py
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'votre_nom_de_db',
+        'USER': 'votre_user_name',
+        'PASSWORD': '_votre_user_password',
+        'HOST': 'localhost',
+        'PORT': '5432',
+    }
+}
+```
+
 ## Utilisation
 
 Après avoir installé les dépendances, vous pouvez lancer le serveur de développement en exécutant :
